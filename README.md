@@ -1,4 +1,4 @@
-# 🏪 Wide World Importers — Microsoft Fabric End-to-End Lakehouse Pipeline
+# 🏪 Wide World Importers — Microsoft Fabric End-to-End Project
 
 An end-to-end data engineering and analytics solution built on **Microsoft Fabric**, implementing a full Medallion Lakehouse architecture (Bronze → Silver → Gold) using PySpark notebooks, Data Factory pipelines, a Direct Lake Semantic Model, and a Power BI report — all within a single unified OneLake environment.
 
