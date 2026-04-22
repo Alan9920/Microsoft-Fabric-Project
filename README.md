@@ -6,20 +6,6 @@ An end-to-end data engineering and analytics solution built on **Microsoft Fabri
 
 ## 📐 Architecture Overview
 
-```
-Data Source                Ingestion              Storage & Compute              Serving
-───────────────            ─────────              ─────────────────              ───────
-Azure Public Blob ──► Data Factory Pipeline ──► OneLake Lakehouse
-(Parquet files)            (Copy Activity)        ├── Bronze (raw Parquet)
-                                                   ├── Silver (Delta tables)    ──► SQL Analytics
-                                                   └── Gold  (aggregated         Endpoint
-                                                       Delta tables)
-                                                         │
-                                                   Semantic Model           ──► Power BI Report
-                                                   (Direct Lake mode)           (Bar chart, Map,
-                                                                                 Table)
-```
-
 ![Architecture Diagram](architecture.png)
 
 **Key Services Used:**
